@@ -1,0 +1,523 @@
+body{
+height: 100%;
+width: 100%;
+overflow: hidden;
+margin: 0px;
+}
+
+#bodyWrapper{
+height: 100%;
+width: 100%;
+margin:0px;
+overflow:hidden;
+}
+
+/* INTRO START */
+#intro{
+height: 100%;
+width: 100%;
+position: absolute;
+background-color: black;
+opacity: 0.95;
+color: white;
+font-size: 64px;
+font-family: 'Quicksand', sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+#click{
+cursor: pointer;
+display: none;
+border-bottom: 1px solid rgba(255,255,255,0);
+
+transition: border 1000ms ease;
+}
+
+#click:hover{
+border-bottom: 1px solid rgba(255,255,255,1);
+}
+
+/* INTRO END */
+
+#bodyWrapperBackgroundOne{
+position: absolute;
+background-color: #353839;
+height: 100%;
+width: 33%;
+border-right: 4px solid #C19A6B;
+}
+
+#bodyWrapperBackgroundTwo{
+position: absolute;
+background-color: #FEFEFA;
+height: 100%;
+width: 67%;
+right:0px;
+}
+
+#header{
+width: 100%;
+height: 5%;
+background-color: #C19A6B;
+position: absolute;
+left: 0px;
+}
+
+#selectionBox{
+height: 80%;
+width: 20%;
+position: absolute;
+margin-top: 5%;
+margin-left: 6%;
+margin-bottom: 5%;
+font-family: 'Quicksand', sans-serif;
+}
+
+.selection{
+width: 80%;
+height: 10%;
+margin: 0 auto;
+margin-top: 17%;
+border: 3.5px solid #C19A6B;
+border-top-right-radius: 35px;
+font-size: 24px;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+background-color:#FEFEFA;
+cursor:pointer;
+}
+.selection p{
+display:inline;
+}
+
+.selection span{
+display: block;
+width: 0px;
+height: 5px;
+background-color: #353839;
+transition: all 0.5s;
+}
+
+.selection:hover span{
+width: 100%;
+}
+
+/* displayArea Start */
+#displayArea{
+height: 80%;
+width: 60%;
+position: absolute;
+right: 0px;
+margin-top: 5%;
+margin-bottom: 5%;
+margin-right: 3.5%;
+}
+
+#homeDisplay{
+font-family: 'Quicksand', sans-serif;
+position: absolute;
+top: 0px;
+right: 0px;
+bottom: 0px;
+left: 0px;
+margin: auto;
+height: 90%;
+width: 40%;
+border: 1px solid black;
+box-shadow: 8px 8px 5px rgba(0,0,0,0.4);
+}
+
+#homeDisplayBackgroundTop{
+background-color: #353839;
+height:30%;
+}
+
+/* DISPLAY AREA END */
+
+/* CONTACT CARD START */
+
+#selfPicture{
+position: absolute;
+margin: 0 auto;
+height: 30%;
+width: 54%;
+background-image: url("self.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+border-radius: 50%;
+float:left;
+z-index: 2;
+border: 5px solid white;
+left: 22%;
+top: 10%;
+}
+
+.homeDisplayText{
+width: 100%;
+display: flex;
+justify-content: left;
+align-items: center;
+font-size: 24px;
+border-top: 2px solid  #353839;
+height: 33%;
+margin: 0;
+}
+
+#homeDisplayTextDiv{
+position: absolute;
+bottom: 5%;
+height: 45%;
+width: 100%;
+}
+
+.homeDisplayText i{
+padding-right: 5px;
+margin-left: 20px;
+}
+
+#namePlate{
+height: 20%;
+width: 100%;
+position: absolute;
+display: flex;
+justify-content: center;
+align-items: flex-end;
+font-size: 32px;
+font-weight: bold;
+text-align: center;
+}
+/* CONTACT CARD END */
+
+/* SKILL DISPLAY START */
+
+.column{
+height: 100%;
+width: 37%;
+position: absolute;
+font-family: 'Quicksand', sans-serif;
+font-size: 30px;
+line-height: 200%;
+}
+
+.column i{
+font-size: 24px;
+}
+
+.skill{
+display: block;
+}
+
+#column1{
+left: 10%;
+}
+
+#column2{
+right: 10%;
+}
+
+/* SKILL DISPLAY END */
+
+
+/* REFERENCE CARDS START */
+
+#cardFooter{
+background-color: #353839;
+width: 100%;
+height: 5%;
+position: absolute;
+bottom:0px;
+}
+
+#cardContainer{
+height: 700px;
+width: 100%;
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.card{
+background-color: #FEFEFA;
+overflow: auto;
+}
+
+#cardOne{
+
+height: 500px;
+z-index: 3;
+width: 300px;
+border: 1px solid black;
+position: absolute;
+box-shadow: 10px 5px 5px rgba(0,0,0,0.4);
+display: flex;
+flex-direction:column;
+}
+
+#cardTwo{
+margin-left: 25px;
+height: 450px;
+z-index: 2;
+width: 300px;
+border: 1px solid black;
+position: absolute;
+box-shadow: 10px 5px 5px rgba(0,0,0,0.4);
+}
+
+#cardThree{
+z-index: 1;
+margin-left: 50px;
+height: 400px;
+width: 300px;
+border: 1px solid black;
+position: absolute;
+box-shadow: 10px 5px 5px rgba(0,0,0,0.4);
+}
+
+#next{
+background-color: black;
+color: white;
+position: absolute;
+bottom:0px;
+cursor: pointer;
+text-align: center;
+border-radius: 48px;
+display:flex;
+align-items: center;
+justify-content: center;
+height: 50px;
+width: 50px;
+box-shadow: 2px 2px 2px  rgba(0,0,0,0.4);
+}
+
+#next i  {
+font-size: 36px;
+}
+
+.frontCardToBack{
+transform: translate(450px,0);
+height: 400px;
+transition: all 1s;
+}
+
+.cardHeader{
+background-color: #353839;
+color: #FEFEFA;
+height: 20%;
+width: 100%;
+border-bottom: 3px solid black;
+font-size: 32px;
+font-weight: bold;
+text-align: center;
+display: flex;
+align-items: center;
+}
+
+.cardHeader i{
+font-size: 26px;
+}
+
+.cardHeaderP{
+width: 100%;
+}
+
+.cardBody{
+height: 80%;
+display:flex;
+flex-direction:column;
+}
+
+.cardBodyElement{
+width: 100%;
+border-bottom: 2px solid black;
+font-size: 20px;
+flex-grow: 1;
+margin: 0;
+display: flex;
+align-items: center;
+justify-content: left;
+}
+
+.cardBodyElement i{
+padding-left: 5%;
+padding-right: 5%;
+}
+
+/* REFERENCE CARDS END */
+
+/* PORTFOLIO START */
+
+#portfolioDisplay{
+height: 100%;
+width: 100%;
+font-family: 'Quicksand', sans-serif;
+border-left: 4px solid #353839;
+border-right: 4px solid #353839;
+border-bottom: 4px solid #353839;
+}
+
+#portfolioHeader{
+display:flex;
+color: #FEFEFA;
+background-color:#353839;
+align-items: center;
+justify-content: center;
+width: 100%;
+height: 15%;
+font-size: 52px;
+font-weight: bold;
+}
+
+#portfolioSitesContainer{
+width: 100%;
+height: 85%;
+}
+
+.otherSite{
+height: 50%;
+width: 25%;
+border-left: 2px solid #353839;
+border-right: 2px solid #353839;
+margin-left: 2%;
+margin-top: 2%;
+box-shadow: 8px 8px 5px rgba(0,0,0,0.4);
+cursor: pointer;
+}
+
+.otherSiteTitle{
+height: 10%;
+width: 100%;
+background-color: #353839;
+color: #FEFEFA;
+font-size: 18px;
+text-align: center;
+font-weight: bold;
+}
+
+.otherSiteThumbnail{
+width: 100%;
+height: 30%;
+border-bottom: 2px solid black;
+background-image: url("SAGThumbnail.png");
+background-size: 100% 100%;
+background-repeat: no-repeat;
+}
+
+.otherSiteBody{
+height: 54%;
+width: 100%;
+}
+
+.otherSiteBody p{
+font-weight: bold;
+font-size: 16px;
+}
+
+.otherSiteFooter{
+width: 100%;
+height: 6%;
+background-color: #353839;
+}
+
+/* PORTFOLIO END */
+
+/* WORK EXPERIENCE START */
+
+.workHistoryCard{
+box-shadow: 8px 8px 5px rgba(0,0,0,0.4);
+height: 90%;
+width: 45%;
+border: 3px solid #353839;
+position: absolute;
+font-family: 'Quicksand', sans-serif;
+}
+
+.workHistoryHeader{
+position: absolute;
+height: 23%;
+width: 100%;
+
+}
+
+.workHistoryPicture{
+position: absolute;
+width: 33%;
+height: 100%;
+
+}
+
+.workHistoryTitle{
+position: absolute;
+right:0px;
+width: 67%;
+height: 100%;
+font-size: 42px;
+display:flex;
+align-items: center;
+justify-content: center;
+font-weight: bold;
+background-color: #353839;
+color: #FEFEFA;
+text-align: center;
+}
+
+.workHistoryBody{
+position: absolute;
+bottom: 0px;
+width: 100%;
+height: 77%;
+}
+
+.workHistoryBodyInfo{
+float:left;
+margin: 0px;
+border-bottom: 3px solid #353839;
+height: 20%;
+width: 67%;
+font-size: 16px;
+}
+
+.workHistoryBodyInfoTitle{
+float:left;
+height: 20%;
+width: 33%;
+border-bottom: 3px solid black;
+display:flex;
+align-items: center;
+justify-content: center;
+font-size: 24px;
+text-align: center;
+background-color: #353839;
+color: #FEFEFA;
+}
+
+.workHistoryBodyInfoDescription{
+height: 40%;
+border-bottom: 0px;
+}
+
+#cadyINC{
+left:0px;
+}
+
+#workHistoryPictureCady{
+background-image: url("cady.jpg");
+background-size: 100% 100%;
+background-repeat: no-repeat;
+}
+
+#plymouthState{
+right: 0px;
+}
+
+#workHistoryPicturePlymouth{
+background-image: url("plymouth.jpg");
+background-size: 100% 100%;
+background-repeat: no-repeat;
+}
+
